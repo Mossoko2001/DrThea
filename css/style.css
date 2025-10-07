@@ -743,8 +743,8 @@ p {
 
 /* Contact */
 .contact-section {
-    background: var(--bg-dark);
-    color: var(--text-light);
+    background: #2c3e50;  /* Couleur de fond sombre pour testé le déployement */
+    color: #ecf0f1;    /* Couleur de texte claire pour testé le déployement */
 }
 
 .contact-section .section-title,
