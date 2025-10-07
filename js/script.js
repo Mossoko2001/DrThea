@@ -415,9 +415,10 @@ window.addEventListener('error', function(e) {
 // Performance monitoring
 function measurePerformance() {
     window.addEventListener('load', () => {
-        const perfData = performance.timing;
-        const loadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log(`Temps de chargement: ${loadTime}ms`);
+        if (performance.getEntriesByType('navigation')[0]) {
+            const loadTime = performance.getEntriesByType('navigation')[0].duration;
+            console.log(`Temps de chargement: ${Math.round(loadTime)}ms`);
+        }
     });
 }
 
