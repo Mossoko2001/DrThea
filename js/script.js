@@ -226,7 +226,7 @@ function openMailto() {
     const body = `De: ${name} (${email})\n\n${message}`;
     
     // Encoder les paramètres pour l'URL
-    const mailtoLink = `mailto:florianamour3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:Juniorthea@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Ouvrir le client mail
     window.location.href = mailtoLink;
